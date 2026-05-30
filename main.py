@@ -55,7 +55,7 @@ def main():
         return
 
     base_path = '.' # Current directory
-    files_to_organize = [os.path.join(base_path, f) for f in os.listdir(base_path) if os.path.isfile(os.path.join(base_path, f)) and f not in [CONFIG_FILE, 'main.py', LOG_FILE]]
+    files_to_organize = [os.path.join(base_path, f) for f in os.listdir(base_path) if os.path.isfile(os.path.join(base_path, f)) and f not in [CONFIG_FILE, 'main.py', LOG_FILE, 'logger.py']]
     
     processed_hashes = {} # To store hashes of processed files
 
